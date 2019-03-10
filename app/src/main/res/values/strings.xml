@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CourseRatingApp</string>
+    <string name="courses">Courses</string>
+    <string name="android">Android</string>
+    <string name="python">Python</string>
+    <string name="angular">Angular</string>
+    <string name="c">C</string>
 </resources>
