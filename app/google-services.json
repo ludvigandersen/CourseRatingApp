@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "987145790224",
+    "firebase_url": "https://course-rating-9735c.firebaseio.com",
+    "project_id": "course-rating-9735c",
+    "storage_bucket": "course-rating-9735c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987145790224:android:e7250de567cf5db1",
+        "android_client_info": {
+          "package_name": "com.example.courseratingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987145790224-e59sb7idhsr0g7k6bfe664bse9rlcpa1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.courseratingapp",
+            "certificate_hash": "b5217c459bf9eed36270dbbb8a96c6752e479b14"
+          }
+        },
+        {
+          "client_id": "987145790224-k0akj3j6aaridpl0l2o8ftca57gno6q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAyMyTW4G-axuUDL20VOEly3bKspSpvAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987145790224-k0akj3j6aaridpl0l2o8ftca57gno6q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

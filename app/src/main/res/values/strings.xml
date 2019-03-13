@@ -1,8 +1,30 @@
 <resources>
     <string name="app_name">CourseRatingApp</string>
-    <string name="courses">Courses</string>
+    <string name="courses">Courses to rate:</string>
     <string name="android">Android</string>
     <string name="python">Python</string>
     <string name="angular">Angular</string>
     <string name="c">C</string>
+    <string name="comment">Any further comments? Write here:</string>
+    <string name="test">%d</string>
+    <string name="submit">Submit rating</string>
+    <string name="submitDone">Thanks for your submission!</string>
+    <string name="ratings">Your submitted ratings for %1$s are:</string>
+    <string name="submitted">%1$d - %2$s</string>
+    <string name="info">Info</string>
+    <string name="conversioninfo"> A>90\n 90 > B > 80\n 80 > C > 70\n 70 > D > 60\n 60 > E > 50\n 50 > Failed </string>
+    <string name="conversiontitle">Numerical to letter grade conversion: </string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 </resources>

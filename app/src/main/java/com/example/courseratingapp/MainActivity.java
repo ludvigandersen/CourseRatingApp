@@ -7,9 +7,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
 
+
     private static final String TAG = "MainActivity";
+
+
     Button androidButton, pythonButton, angularButton, CButton;
 
     @Override
@@ -19,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         init();
     }
+
+
+
+
 
     public void onClickAndroid(View view){
         Log.d(TAG, "onClickAndroid: has been called");
@@ -56,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void init(){
+
+
         androidButton = findViewById(R.id.androidButtton);
         pythonButton = findViewById(R.id.pythonButton);
         angularButton = findViewById(R.id.angularButton);
