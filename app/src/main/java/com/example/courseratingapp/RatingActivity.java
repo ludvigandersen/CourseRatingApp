@@ -2,6 +2,7 @@ package com.example.courseratingapp;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,15 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.example.courseratingapp.Model.Rating;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RatingActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
@@ -22,6 +32,8 @@ public class RatingActivity extends AppCompatActivity implements SeekBar.OnSeekB
     SeekBar feedbackBar, qualityBar, relevansBar, perfomanceBar, preparationBar, jobBar;
     EditText editComment;
     Button infoButton;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +54,7 @@ public class RatingActivity extends AppCompatActivity implements SeekBar.OnSeekB
     public void submitRating(View view){
         Log.d(TAG, "submitRating: Has been called");
 
+        //TODO: Forsøg at sende Rating object til Firestore i stedet for seekbar værdier
         Rating sentRating = new Rating();
         sentRating.setFeedback(feedbackBar.getProgress());
         sentRating.setExQuality(qualityBar.getProgress());
@@ -51,13 +64,35 @@ public class RatingActivity extends AppCompatActivity implements SeekBar.OnSeekB
         sentRating.setJobOpp(jobBar.getProgress());
         sentRating.setComment(editComment.getText().toString());
 
+        Map<String, Object> rating = new HashMap<>();
+        rating.put("feedback", feedbackBar.getProgress());
+        rating.put("quality", qualityBar.getProgress());
+        rating.put("relevans", relevansBar.getProgress());
+        rating.put("perfomance", perfomanceBar.getProgress());
+        rating.put("preparation", preparationBar.getProgress());
+        rating.put("opportunities", jobBar.getProgress());
+        rating.put("comment", editComment.getText().toString());
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        db.collection("ratings").document("courses")
+                .collection(courseName.getText().toString()).document(user.getEmail())
+                .set(rating).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Log.d(TAG, "onSuccess: succesfully written");
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.w(TAG, "onFailure: ",e );
+            }
+        });
+
         Intent i = new Intent(this, SubmitActivity.class );
         i.putExtra("ratingData", sentRating);
         i.putExtra("courseName", courseName.getText());
         startActivity(i);
 
-
-        //TODO: Implement onCLick function for rating a course & teacher
     }
 
     private void init() {

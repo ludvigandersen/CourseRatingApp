@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "987145790224-7jb7psodu22j6aln4j77lahutbk417j5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.courseratingapp",
+            "certificate_hash": "c635749fe329d2db4b798c4c8010d6da8da27dbd"
+          }
+        },
+        {
           "client_id": "987145790224-k0akj3j6aaridpl0l2o8ftca57gno6q5.apps.googleusercontent.com",
           "client_type": 3
         }

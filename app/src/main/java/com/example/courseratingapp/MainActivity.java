@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button androidButton, pythonButton, angularButton, CButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,17 +28,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
     public void onClickAndroid(View view){
         Log.d(TAG, "onClickAndroid: has been called");
         Intent i = new Intent(this, RatingActivity.class);
         i.putExtra("courseName", androidButton.getText());
-
-
         startActivity(i);
-
     }
 
     public void onClickPython(View view){
@@ -45,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, RatingActivity.class);
         i.putExtra("courseName", pythonButton.getText());
         startActivity(i);
-
     }
 
     public void onClickAngular(View view){
@@ -53,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, RatingActivity.class);
         i.putExtra("courseName", angularButton.getText());
         startActivity(i);
-
     }
 
     public void onClickC(View view){
@@ -61,13 +54,16 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, RatingActivity.class);
         i.putExtra("courseName", CButton.getText());
         startActivity(i);
+    }
 
+    public void signOut(View view){
+        Intent i = new Intent(this, AuthActivity.class);
+        FirebaseAuth.getInstance().signOut();
+        startActivity(i);
     }
 
 
     private void init(){
-
-
         androidButton = findViewById(R.id.androidButtton);
         pythonButton = findViewById(R.id.pythonButton);
         angularButton = findViewById(R.id.angularButton);

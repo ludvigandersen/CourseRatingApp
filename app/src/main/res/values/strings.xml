@@ -12,7 +12,7 @@
     <string name="ratings">Your submitted ratings for %1$s are:</string>
     <string name="submitted">%1$d - %2$s</string>
     <string name="info">Info</string>
-    <string name="conversioninfo"> A>90\n 90 > B > 80\n 80 > C > 70\n 70 > D > 60\n 60 > E > 50\n 50 > Failed </string>
+    <string name="conversioninfo"> A>90\n 90 > B > 80\n 80 > C > 70\n 70 > D > 60\n 60 > E > 50\n 50 > Failed \nIf no rating is given, rating is set to 1</string>
     <string name="conversiontitle">Numerical to letter grade conversion: </string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->
