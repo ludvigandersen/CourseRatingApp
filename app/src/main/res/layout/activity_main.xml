@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="52dp"
         android:onClick="signOut"
-        android:text="Sign out"
+        android:text="@string/sign_out"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

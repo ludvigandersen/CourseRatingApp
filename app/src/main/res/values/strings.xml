@@ -8,6 +8,7 @@
     <string name="comment">Any further comments? Write here:</string>
     <string name="test">%d</string>
     <string name="submit">Submit rating</string>
+    <string name = "rating">rating</string>
     <string name="submitDone">Thanks for your submission!</string>
     <string name="ratings">Your submitted ratings for %1$s are:</string>
     <string name="submitted">%1$d - %2$s</string>
@@ -15,6 +16,9 @@
     <string name="conversioninfo"> A>90\n 90 > B > 80\n 80 > C > 70\n 70 > D > 60\n 60 > E > 50\n 50 > Failed \nIf no rating is given, rating is set to 1</string>
     <string name="conversiontitle">Numerical to letter grade conversion: </string>
     <string name="title_activity_login">Sign in</string>
+    <string name = "sign_out">Sign out</string>
+    <string name = "create_account">Create account</string>
+    <string name = "pass">pass</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

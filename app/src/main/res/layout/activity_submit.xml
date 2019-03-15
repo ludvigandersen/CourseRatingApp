@@ -63,7 +63,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="textView" />
+                tools:text="@string/rating" />
 
             <TextView
                 android:id="@+id/relevansRating"
@@ -75,10 +75,10 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
-                android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/qualityRating" />
+                app:layout_constraintTop_toBottomOf="@+id/qualityRating"
+                tools:text="@string/rating" />
 
             <TextView
                 android:id="@+id/jobOppRating"
@@ -90,10 +90,10 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
-                android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tprepRating" />
+                app:layout_constraintTop_toBottomOf="@+id/tprepRating"
+                tools:text="@string/rating" />
 
             <TextView
                 android:id="@+id/qualityRating"
@@ -105,10 +105,10 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
-                android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/feedbackRating" />
+                app:layout_constraintTop_toBottomOf="@+id/feedbackRating"
+                tools:text="@string/rating" />
 
             <TextView
                 android:id="@+id/tperfomanceRating"
@@ -120,10 +120,10 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
-                android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/relevansRating" />
+                app:layout_constraintTop_toBottomOf="@+id/relevansRating"
+                tools:text="@string/rating" />
 
             <TextView
                 android:id="@+id/tprepRating"
@@ -135,10 +135,10 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
-                android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tperfomanceRating" />
+                app:layout_constraintTop_toBottomOf="@+id/tperfomanceRating"
+                tools:text="@string/rating" />
 
             <TextView
                 android:id="@+id/commentRating"
@@ -151,10 +151,10 @@
                 android:layout_marginRight="8dp"
                 android:gravity="center"
                 android:maxWidth="350dp"
-                android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/jobOppRating" />
+                app:layout_constraintTop_toBottomOf="@+id/jobOppRating"
+                tools:text="@string/rating" />
 
         </LinearLayout>
     </ScrollView>
