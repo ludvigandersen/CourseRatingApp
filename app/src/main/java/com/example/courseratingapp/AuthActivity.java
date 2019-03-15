@@ -65,6 +65,7 @@ public class AuthActivity extends AppCompatActivity {
     }
 
     public void signOut() {
+        Log.d(TAG, "signOut: Has been called");
         mAuth.signOut();
         updateUI(null);
     }
