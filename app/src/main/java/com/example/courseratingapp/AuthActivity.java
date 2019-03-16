@@ -84,7 +84,7 @@ public class AuthActivity extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(AuthActivity.this, "Authentication failed.",
+                            Toast.makeText(AuthActivity.this, "Authentication failed: Email and atleast 6 character password required",
                                     Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
