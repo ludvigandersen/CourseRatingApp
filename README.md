@@ -14,7 +14,7 @@ How good their examples are
 Job opportunities 
 
 **Must have requirements:**
-User-friendly design
+User-friendly design <br/>
 At least two activities
 Restore Activity state change
 Rate at least 4 courses 
