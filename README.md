@@ -2,7 +2,7 @@
 
 Android, obligatorisk opgave 1
 
-## The assignment: 
+**The assignment:**
 At the moment KEA sends out a questionnaire each year on how students rates the courses including the teachers they have attended. KEA now wishes to build an android app.
 
 Students rates the courses and respective teachers based on: 
@@ -13,8 +13,8 @@ Amount of feedback
 How good their examples are
 Job opportunities 
 
-## Must have requirements:
-User-friendly design /n
+**Must have requirements:**
+User-friendly design
 At least two activities
 Restore Activity state change
 Rate at least 4 courses 
